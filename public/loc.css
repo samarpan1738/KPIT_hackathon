@@ -1,0 +1,139 @@
+*, *::after, *::before{
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.hero-img{
+    width: 100vw;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background: url(/DLF_Mall_of_India.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-color: black;
+    filter: blur(0px);
+}
+
+.parking-name{
+    margin: 5px 50px 30px;
+    font-size: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.booking-div{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.lot-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lot-available{
+    font-size: 1.75em;
+}
+
+.lot-progress{
+    background: blue;
+    height: 100%;
+    width: calc(400px * 35/51);
+}
+.lot-bar{
+    margin: 2px 10px;
+    width: 400px;
+    height: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5);
+    overflow: hidden;
+}
+
+.book-slot{
+    text-decoration: none;
+    padding: 0.75em 1em;
+    background-color: rgb(65, 65, 255);
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.area-detail{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px;
+}
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 400px;
+    width: 400px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.prediction-graph, .cust-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 400px;
+    width: 400px;
+    font-size: 1.25em;
+    font-weight: 700;
+    word-spacing: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cust-review{
+    flex-direction: column;
+}
+
+.cust-name{
+    position: relative;
+    font-size: 1.25em;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.cust-name::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 1.3em;
+    height: 2px;
+    background-color: rgb(65, 65, 255);
+}
+
+.cust-body{
+    margin: 20px;
+}
+
+#booking-time{
+    margin: 5px 20px 5px 5px;
+}

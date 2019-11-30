@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Parking Overview</title>
+
+		<link rel="stylesheet" href="css/index.css" />
+
+		<script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+	</head>
+	<body>
+		<div class="hero-img">
+			<span class="parking-name">DLF Mall Of India</span>
+		</div>
+
+		<div class="booking-div">
+			<div class="lot-details">
+				<div class="lot-space">
+					<span class="lot-available">35</span>
+					<span class="lot-value">/51</span>
+				</div>
+				<div class="lot-bar"></div>
+			</div>
+
+			<!-- <div class="book-slot">
+                <span class="pick-date">Pick a Date</span>
+            </div> -->
+			<div class="book-details">
+				TIME: 
+				<input type="time" name="booking-time" id="booking-time">
+				<a href="#" class="book-slot">Book A Slot</a>
+			</div>
+		</div>
+
+		<div class="area-detail">
+			<div id="map"></div>
+			<div class="cust-review">
+				<div class="cust-name">Sarthik Garg</div>
+				<p class="cust-body">
+					This place is really nice, many outlets for vibrant choices and loves the PVR.
+					Comfortable seats in the PVR and enough leg space. All type of food outlets for all 
+					the cuisines you could imagine.
+				</p>
+			</div>
+			<div class="prediction-graph" id="container"></div>
+		</div>
+		<script src="js/script.js"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtMBMDlVj3UhvKf2mXKR2sCKc85LwhHv4&callback=initMap"
+		></script>
+	</body>
+</html>
